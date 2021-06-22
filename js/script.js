@@ -91,13 +91,13 @@ let input2 = Number(prompt('Try to guess the any of the numbers and type it belw
 
 let arr=[5,80,8]; 
 for(let y=1;y<6;y++){
-    if(input2 === arr[0] || input2=== arr[1] || input2 === arr[2]){
+    if(input2 === arr[0] || input2 === arr[1] || input2 === arr[2]){
         alert('That is correct , good job ');
       break;
     }      
     else{
         alert('Try again');
-        input = Number(prompt('Try to guess the number again and type it belwo'));
+        input2 = Number(prompt('Try to guess the number again and type it belwo'));
     }
     }
 
