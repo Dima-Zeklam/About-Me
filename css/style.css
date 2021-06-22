@@ -6,7 +6,13 @@ section {
 font-size: 20px;
 background-color: black;
 color: white;
-padding: 5px;
-text-align: center;
+padding: 6px;
+margin: 100px;
+/* width: 400px; */
+border: violet solid 6px;
 }
 
+
+li{
+    margin: 20px;
+}
