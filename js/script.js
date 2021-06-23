@@ -111,6 +111,7 @@ alert('The correct answer is 8');
 
 let n= 6;
 let arrnum=[5,80,8]; 
+
 for(let y=1;y<=6;y++){
     
     let input2 = Number(prompt('Try to guess the any of the numbers and type it belwo,you have just' + n + ' attempts'));
@@ -122,7 +123,7 @@ for(let y=1;y<=6;y++){
     } 
        
    }  
-   if(y== 7)
+   if(y == 7 )
    break;
    alert('try again ');
         n--;
