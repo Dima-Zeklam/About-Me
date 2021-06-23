@@ -64,41 +64,45 @@ if(Q5 == 'y' || Q5 == 'yes')
 alert("your answer is correct ");
 }
 
-let input = Number(prompt('Try to guess the number and type it belwo,you have just 4 attempts'));
-for(let i=1;i<4;i++){
-    if(input < 8){
+let numb =8;
+let x= 4;
+for(let i=1;i<=4;i++){
+    let input = Number(prompt('Try to guess the number and type it belwo,you have just ' + x + ' attempts'));
+    if(input < numb){
         alert('Too low , try again');
-        input = Number(prompt('Try to guess the number again  and type it belwo'));
-    }else if(input == 8){
+        x--;
+    }else if(input >numb)
+    {
+        alert('Too high, try again');
+        x--;
+    }else if(input === numb){
         alert('That is correct , good job ');
         break;
     }
-    else
-    {
-        alert('Too high, try again');
-        input = Number(prompt('Try to guess the number again  and type it belwo'));
-    }
 }
-if(input < 8)
-    alert('Too low, your attempts are ended');
-    else
-    alert('Too high, your attempts are ended');
 
 alert('The correct answer is 8');
 
 
-let input2 = Number(prompt('Try to guess the any of the numbers and type it belwo,you have just 6 attempts'));
 
+let n= 6;
 let arr=[5,80,8]; 
-for(let y=1;y<6;y++){
-    if(input2 === arr[0] || input2 === arr[1] || input2 === arr[2]){
+for(let y=1;y<=6;y++){
+    
+    let input2 = Number(prompt('Try to guess the any of the numbers and type it belwo,you have just' + n + ' attempts'));
+    for(let z=0;z<arr.length;z++){
+    if(input2 === arr[z] || input2 === arr[1] || input2 === arr[2]){
         alert('That is correct , good job ');
+      y=7;
       break;
-    }      
-    else{
-        alert('Try again');
-        input2 = Number(prompt('Try to guess the number again and type it belwo'));
-    }
+    } 
+       
+   }  
+   if(y== 7)
+   break;
+   alert('try again ');
+        n--;
+   
     }
 
     alert('The correct answers are '+ arr); 
