@@ -1,5 +1,5 @@
 # About-Me
 
-I was Navigator : Dima zeklam 
+I was Navigator : Dima zeklam .
 
-I was Driver : Abdalrahman abu alata 
+I was Driver : Abdalrahman abu alata .
