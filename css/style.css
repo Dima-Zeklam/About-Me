@@ -1,4 +1,7 @@
-
+h1{
+    font-size: 30px;
+    margin-top:10px;
+}
 header{
     text-align: center;
 }
@@ -10,6 +13,13 @@ padding: 6px;
 margin: 100px;
 /* width: 400px; */
 border: violet solid 6px;
+}
+ol{
+	list-style-type: decimal;
+}
+ul{
+
+    list-style-type: square;
 }
 
 
