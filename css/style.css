@@ -1,18 +1,38 @@
+body{
+    background-image: url("https://wallpaperaccess.com/full/2217435.jpg");
+}
 h1{
     font-size: 30px;
-    margin-top:10px;
+   padding-top:50px;
+    text-align: center;
+    color:wheat;
+    font-family: 'Kirang Haerang', cursive;
+}
+h2{
+    padding-top: 5px;
+    padding-bottom: 10px;
+  
 }
 header{
     text-align: center;
 }
+
 section {
-font-size: 20px;
-background-color: black;
-color: white;
-padding: 6px;
-margin: 100px;
+    font-family: 'Kirang Haerang', cursive;
+font-size: 26px;
+/* background-color:#A04000; */
+color: wheat;
+/* margin: 200px;
+margin-top: 30px; */
 /* width: 400px; */
-border: violet solid 6px;
+border: white dotted 6px;
+padding : 26px;
+/* font-weight: bold; */
+margin:100px;
+margin-left: 150px;
+margin-right: 150px;
+position: relative;
+background-color: rgb(9, 44, 119);
 }
 ol{
 	list-style-type: decimal;
@@ -25,4 +45,20 @@ ul{
 
 li{
     margin: 20px;
+}
+
+#c1{
+
+ margin-top:0;
+
+
+}
+.image{
+    float: right;
+     
+}
+
+div{
+    display: inline-block;
+
 }

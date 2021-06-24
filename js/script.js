@@ -125,12 +125,7 @@ for(let y=1;y<=6;y++){
     
     let input2 = Number(prompt('Try to guess the any of the numbers and type it belwo,you have just' + n + ' attempts'));
     for(let z=0;z<arrnum.length;z++){
-<<<<<<< HEAD
     if(input2 === arrnum[z] ){
-=======
-    if(input2 === arrnum[z]){
-        counter++;
->>>>>>> 6ad7c560884f65e2bbc76ffd86c3e595f49eecd5
         alert('That is correct , good job ');
       y=7;
       break;
