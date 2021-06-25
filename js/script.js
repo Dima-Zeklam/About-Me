@@ -167,10 +167,11 @@ let arrnum=[5,80,8];
 function question7 (){
 for(let y=1;y<=6;y++){
     
-    let input2 = Number(prompt('Try to guess the any of the numbers and type it belwo,you have just' + n + ' attempts'));
+    let input2 = Number(prompt('Try to guess the any of the numbers and type it belwo,you have just ' + n + ' attempts'));
     for(let z=0;z<arrnum.length;z++){
     if(input2 === arrnum[z] ){
         alert('That is correct , good job ');
+        counter++;
       y=7;
       break;
     } 
@@ -187,6 +188,6 @@ for(let y=1;y<=6;y++){
 question7();
 
     alert('The correct answers are '+ arrnum); 
-    alert("the correct answers is ( "+counter+'/7 )');
+    alert("the correct answers is ( " + counter +'/7 )');
 
     alert("Hello " + firstName + " thank you for visiting this site , see you again ^_^ " );
