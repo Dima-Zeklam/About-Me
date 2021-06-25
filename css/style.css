@@ -47,12 +47,6 @@ li{
     margin: 20px;
 }
 
-#c1{
-
- margin-top:0;
-
-
-}
 .image{
     float: right;
      
@@ -60,5 +54,9 @@ li{
 
 div{
     display: inline-block;
-
+  
 }
+ div p{ 
+   
+    padding: 15px;
+ }
