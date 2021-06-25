@@ -1,37 +1,81 @@
 'use strict';
 
-let str=['my major is electrical engineering ?','"Do i like programming ?','Do you think i studied at Alhashemih university ?','did i graduated in 2019','Is my goal to be professional in computer security '];
+ confirm("Hi there, my name is Dima Zeklam, living in Amman,Jordan");
+ let firstName = prompt(" What is your name ?");
+ confirm("Hi " + firstName + " You have to answer the questions by typing yes/no or y/n , let's get started");
 
-let q1,q2,q3,q4,q5;
+let str=['my major is electrical engineering ?','Do i like programming ?','Do you think i studied at Alhashemih university ?','did i graduated in 2019','Is my goal to be professional in computer security '];
+
+ let q1,q2,q3,q4,q5;
 let arr=[q1,q2,q3,q4,q5];
 let counter=0;
-function questions (){
 
-for(let i=0;i<arr.length;i++){
-  arr[i]= prompt(str[i]);
-  if(arr[i] =='y' || arr[i]=='yes' && i%2==0 ){
+
+// for(let i = 0;i<str.length;i++){
+//   arr[i]= prompt(str[i]).toLowerCase();
+//   console.log(arr[i]);
+//   if(arr[i] ==='y' || arr[i] ==='yes' ){
     
-    alert("your answer is wrong ");
- }else if(arr[i] =='n' || arr[i]=='no' && i%2==0 ){
-        counter++;
- alert("your answer is correct ");
-  }else if(arr[i] =='y' || arr[i]=='yes' && i%2!=0 ){
-    counter++;
-    alert("your answer is correct ");
-}else if(arr[i] =='n' || arr[i]=='no' && i%2==0 ){
+//     alert("your answer is wrong ");
+//  }else if(arr[i] === 'n' || arr[i] ==='no' ){
+//         counter++;
+//  alert("your answer is correct ");
+//   }
+// }
 
- alert("your answer is wrong ");
+//   for(let i = 0;i<str2.length;i++){
+//     arr[i]= prompt(str2[i]).toLowerCase();
+//   if(arr[i] === 'y' || arr[i] === 'yes' ){
+//     counter++;
+//     alert("your answer is correct ");
+// }else if(arr[i] ==='n' || arr[i] ==='no' ){
+
+//  alert("your answer is wrong ");
+// }
+// }
+function questions (){
+for(let i = 0;i<arr.length;i++){
+      arr[i]= prompt(str[i]).toLowerCase();
+  console.log(arr[i]);
+    if(i%2!=0){
+    switch(arr[i]){
+    case 'yes':
+        case 'y':
+           // console.log("correct");
+            alert("your answer is correct ");
+            counter++;
+            break;
+            case 'no':
+                case 'n':
+                    //console.log("wrong");
+                    alert("your answer is wrong ");
+                      break;
+
 }
+    }else if(i%2==0){
+        switch(arr[i]){
+            case 'yes':
+                case 'y':
+               
+                    //console.log("wrong");
+                   alert("your answer is wrong ");
+                 
+                    break;
+                    case 'no':
+                        case 'n':
+                               // console.log("correct");
+                            alert("your answer is correct ");
+                            counter++;
+                              break;
+        
+        }
+    }
 
 }
-
 }
 questions();
 
 
-// confirm("Hi there, my name is Dima Zeklam, living in Amman,Jordan");
-// let firstName = prompt(" What is your name ?");
-// confirm("Hi " + firstName + " You have to answer the questions by typing yes/no or y/n , let's get started");
 // //question 1
 // let Q1 = prompt(" my major is electrical engineering ?").toLowerCase();
 
